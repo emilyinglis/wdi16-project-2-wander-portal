@@ -1,147 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-    <%= stylesheet_link_tag    "application" %>
-    <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
-  </head>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "vendor/modernizr" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
 
-  <body>
-
-    
-
-    <!-- start of foundation header -->
+<body>
 
 
-    <div class="row">
-      <div class="large-12 columns">
+  <!-- start of foundation nav -->
 
-       
-        <div class="row">
-          <div class="large-12 columns">
+  <nav class="top-bar" data-topbar>
+            <ul class="title-area">
 
-            <nav class="top-bar" data-topbar>
-              <ul class="title-area">
-               
-                <li class="name">
-                  <h1>
-                    <%= link_to "WANDER", root_path %>
-          
-                   
-                  </h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-              </ul>
-              
-              <section class="top-bar-section">
-               
+              <li class="name">
+                <h1>
+                  <%= link_to(image_tag("wander-nav-logo.png", :alt => "Wander Logo", :title => "Home"), root_path) %>
 
-                <ul class="right">
-                  
-                  <li class="divider"></li>
-
-                  <li class="has-dropdown">
-                    <a href="#">About Us</a>
-                    <ul class="dropdown">
-                      <li><%= link_to "About", about_path %></li>
-                      <li><%= link_to "Contact", contact_path %></li>
-                    </ul>
-                  </li>
-                  <li class="divider"></li>
-
-                  <% if current_user %>
-
-               
-                  <li><%= link_to "My Profile", current_user %></li>
-                  </li>
-                  <li class="divider"></li>
-
-                  <li class="has-dropdown">
-                    <a href="#">My Products</a>
-                    <ul class="dropdown">
-                      <li><%= link_to "All Products", products_path %></li>
-                      <li><%= link_to "Add Product", new_product_path %></li>         
-                    </ul>
-                  </li>
-                  <li class="divider"></li>
-
-                  <li class="has-dropdown">
-                    <a href="#">Admin</a>
-                    <ul class="dropdown">
-                      <li><%= link_to "Users", users_path %></li>                             
-                      <li><%= link_to "Categories", categories_path %></li>                   
-                      <li><%= link_to "Sizes", sizes_path %></li>          
-                    </ul>
-                  </li>
-                  <li class="divider"></li>
-
-                  <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
-                  </li>
-                  <li class="divider"></li>
-
-                  
-
-                  <% else %>
-                  <li><%= link_to "Sign Up", new_user_registration_path %></li>
-                  </li>
-                  <li class="divider"></li>
-                  <li><%= link_to "Log In", new_user_session_path %></li>
-                  </li>
-                  <li class="divider"></li>
-
-
-              
-                  <% end %>
-
-                </ul>
-              </section>
-            </nav>
-            
-          </div>
-        </div>
-
-
-        <!-- end of foundation header -->
-
-
-
-
-          <nav>
-            <ul>
-              <% if current_user %>
-              <li><strong>Brand & Admin Menu</strong></li> 
-
-              <li><%= link_to "My Profile", current_user %></li>
-              
-              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-
-                        
-
-              <% else %>
-              <li><%= link_to "Sign Up", new_user_registration_path %></li>
-              <li><%= link_to "Log In", new_user_session_path %></li>
-              <% end %>
+                </h1>
+              </li>
+              <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
             </ul>
-          </nav>
+            <section class="top-bar-section">
+              <ul class="right">
+                <% if current_user %>
+                <li class="divider"></li> 
+                <li><%= link_to "My Profile", current_user %></li>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href="#">My Products</a>
+                <ul class="dropdown">
+                  <li><%= link_to "All Products", products_path %></li>
+                  <li><%= link_to "Add Product", new_product_path %></li>         
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href="#">Admin</a>
+                <ul class="dropdown">
+                  <li><%= link_to "Users", users_path %></li>                             
+                  <li><%= link_to "Categories", categories_path %></li>                   
+                  <li><%= link_to "Sizes", sizes_path %></li>          
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                <a href="#">About Us</a>
+                <ul class="dropdown">
+                  <li><%= link_to "About", about_path %></li>
+                  <li><%= link_to "Contact", contact_path %></li>
+                </ul>
+              </li>
+              <li class="divider"></li>
+              <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+            </li>
+            <li class="divider"></li>
+            <% else %>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="#">About Us</a>
+              <ul class="dropdown">
+                <li><%= link_to "About", about_path %></li>
+                <li><%= link_to "Contact", contact_path %></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          </li>
+          <li class="divider"></li>
+          <li><%= link_to "Log In", new_user_session_path %></li>
+        </li>
+        <li class="divider"></li>
+        <% end %>
+      </ul>
+    </section>
+  </nav>
+
+</div>
+</div>
 
 
 
 
-        <!-- old header ends -->
+<!-- end of foundation header -->
 
-    <% flash.each do |name, message| %>
-      <div class="flash-message flash-message-<%= name %>">
-        <%= message %>
-      </div>
-    <% end %>
 
-    <%= yield %>
 
-  </body>
+<% flash.each do |name, message| %>
+<div class="flash-message flash-message-<%= name %>">
+  <%= message %>
+</div>
+<% end %>
+
+<%= yield %>
+
+</body>
 </html>
