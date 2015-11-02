@@ -14,15 +14,30 @@
     <%= f.email_field :email, autofocus: true %>
   </div>
 
+  <!-- manually entered fields starts  -->
+
+  <div class="field">
+    <%= f.label :role %><br />
+    <%= f.text_field :role %>
+  </div>
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
 
   <div class="field">
-    <%= f.label :logo %><br />
-    <%= f.text_field :logo%>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
   </div>
+
+  <div class="field">
+    <%= f.label :logo %><br />
+    <%= f.text_field :logo %>
+  </div>
+
+
+  <!-- manually entered fields ends  -->
 
   <div class="field">
     <%= f.label :password %>
