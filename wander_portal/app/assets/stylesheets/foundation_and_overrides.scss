@@ -923,13 +923,13 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: transparent;
-// $orbit-nav-bg-hover: rgba(0,0,0,0.3);
-// $orbit-nav-arrow-color: $white;
-// $orbit-nav-arrow-color-hover: $white;
+$orbit-nav-bg-hover: transparent;
+$orbit-nav-arrow-color: transparent;
+$orbit-nav-arrow-color-hover: transparent;
 
 // We use these to control the timer styles
-// $orbit-timer-bg: rgba(255,255,255,0.3);
-// $orbit-timer-show-progress-bar: true;
+$orbit-timer-bg: transparent;
+$orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
 // $orbit-bullet-nav-color: $iron;
@@ -938,7 +938,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to controls the style of slide numbers
 // $orbit-slide-number-bg: rgba(0,0,0,0);
-// $orbit-slide-number-font-color: $white;
+$orbit-slide-number-font-color: transparent;
 // $orbit-slide-number-padding: rem-calc(5);
 
 // Graceful Loading Wrapper and preloader

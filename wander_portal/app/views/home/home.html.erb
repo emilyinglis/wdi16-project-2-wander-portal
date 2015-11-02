@@ -19,7 +19,11 @@
     <div class="row">
       <div class="large-12 columns show-for-small">
 
-        <img src="http://placehold.it/1200x700&text=Mobile Header">
+        <div id="featured" data-orbit>
+          <%= link_to(image_tag("home-slide-1-mob.png", :alt => "Wander Slide 1", :title => "Slide 1"), root_path) %>
+          <%= link_to(image_tag("home-slide-2-mob.png", :alt => "Wander Slide 2", :title => "Slide 2"), root_path) %>
+          <%= link_to(image_tag("home-slide-3-mob.png", :alt => "Wander Slide 3", :title => "Slide 3"), root_path) %>
+        </div>
 
       </div>
     </div><br>
@@ -30,7 +34,7 @@
 
           <div class="large-4 small-6 columns">
 
-            <h4>Upcoming Shows</h4><hr>
+            <h4>Quick Links</h4><hr>
 
             <div class="row">
               <div class="large-1 column">
@@ -38,7 +42,7 @@
               </div>
 
               <div class="large-9 columns">
-                <h5><a href="#">Venue Name</a></h5>
+                <h5><%= link_to "My Profile", current_user %></h5>
                 <h6 class="subheader show-for-small">Doors at 00:00pm</h6>
               </div>
             </div><hr>
