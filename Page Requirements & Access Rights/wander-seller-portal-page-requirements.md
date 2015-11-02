@@ -69,7 +69,7 @@ _______________________________________________________
 _______________________________________________________
 
 
-#####All Products / Welcome Screen
+#####All Products / Welcome Screen upon login
 
 > **DESKTOP**
 
