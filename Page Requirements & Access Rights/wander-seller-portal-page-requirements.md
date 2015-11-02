@@ -154,9 +154,10 @@ Require following fields:
 
 > Image(s)
 
-> Brand
+> Brand (user:references when scaffolding products)
 
 >> Admin: [Manually select from a list of User's names]
 
 >> Brand: [Hidden value]
+
 
