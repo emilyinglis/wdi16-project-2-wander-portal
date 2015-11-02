@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 20151102093825) do
     t.string   "title"
     t.text     "description"
     t.string   "price"
-    t.string   "size"
     t.text     "image"
     t.integer  "user_id"
     t.datetime "created_at",  null: false
@@ -42,17 +41,6 @@ ActiveRecord::Schema.define(version: 20151102093825) do
   end
 
   add_index "products", ["user_id"], name: "index_products_on_user_id", using: :btree
-
-  create_table "products_sizes", id: false, force: :cascade do |t|
-    t.integer "product_id", null: false
-    t.integer "size_id",    null: false
-  end
-
-  create_table "sizes", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

@@ -17,7 +17,10 @@
 
 <p>
   <strong>Size:</strong>
-  <%= @product.size %>
+<!--   <%= @product.size %> -->
+<% @product.sizes.each do |size| %>
+    <%= size.name %>
+  <% end %>
 </p>
 
 <p>
