@@ -23,16 +23,13 @@
     <%= f.label :price %><br>
     <%= f.text_field :price %>
   </div>
-  <div class="field">
-    <%= f.label :size %><br>
-    <%= f.text_field :size %>
-  </div>
+
   <div class="field">
     <%= f.label :category %><br>
     <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %>
   </div>
   <div class="field">
-    <%= f.label :size %><br>
+    <%= f.label :sizes %><br>
     <%= f.collection_check_boxes :size_ids, Size.all, :id, :name %>
   </div>
   <div class="field">

@@ -17,7 +17,6 @@
 
 <p>
   <strong>Size:</strong>
-<!--   <%= @product.size %> -->
 <% @product.sizes.each do |size| %>
     <%= size.name %>
   <% end %>
@@ -25,12 +24,12 @@
 
 <p>
   <strong>Image:</strong>
-  <%= @product.image %>
+  <%= image_tag(@product.image, width:"200px", height:"auto") %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @product.user %>
+  <%= @product.user.try(:name) %>
 </p>
 
 <p>
