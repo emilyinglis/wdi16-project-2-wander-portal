@@ -5,14 +5,15 @@
 
   <div class="large-4 small-12 columns">
 
-    <%= image_tag("prod-index-brand-logo.png") %>
-
-
     <div class="hide-for-small panel">
-      <h3>All Products</h3>
-      <h5 class="subheader">View all your products then manage them instantly with the Wander Portal.
-      </h5>
+    <%= image_tag("prod-index-brand-logo.png") %>
     </div>
+
+ 
+      <h3>All Products</h3>
+      <h5 class="subheader" id="all-products-summary">View all your products then manage them instantly with the Wander Portal.
+      </h5>
+    
 
     <a href="#">
      <div class="panel callout radius">
@@ -20,8 +21,6 @@
        <h6><%= link_to 'Add New Product', new_product_path %></h6>
      </div>
    </a>
-
-
  </div>
 
 
@@ -29,13 +28,11 @@
   <% @products.each do |product| %>
   <div class="row">
 
-
-
     <div class="large-4 small-6 columns">
       <%= image_tag(product.image, width:"200px", height:"auto") %>
 
       <div class="panel">
-        <h5><%= product.title %></h5>
+        <h5 class="all-prod-title" ><%= product.title %></h5>
         <h6 class="subheader"><%= product.user.try(:name) %></h6>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
@@ -48,43 +45,14 @@
 <% end %>
 
 
-
-
-
-<div class="row">
-  <div class="large-12 columns">
-    <div class="panel">
-      <div class="row">
-
-        <div class="large-2 small-6 columns">
-          <img src="http://placehold.it/300x300&text=Site Owner">
-        </div>
-
-        <div class="large-10 small-6 columns">
-          <strong>This Site Is Managed By<hr/></strong>
-
-          Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna. Donec dignissim nibh fermentum odio ornare sagittis
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
 </div>
-</div>
-
-
-
-
 
 <footer class="row">
   <div class="large-12 columns"><hr/>
     <div class="row">
 
       <div class="large-6 columns">
-        <p>© Copyright no one at all. Go to town.</p>
+        <p>© Copyright Wander 2015</p>
       </div>
 
       <div class="large-6 columns">
