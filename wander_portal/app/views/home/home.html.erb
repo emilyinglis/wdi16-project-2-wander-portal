@@ -1,82 +1,59 @@
+
+<div id="featured" class="home-orbit-img" data-orbit>
+<%= link_to(image_tag("home-slide-1.png", :alt => "Wander Slide 1"), root_path) %>
+  <%= link_to(image_tag("home-slide-2.png", :alt => "Wander Slide 2"), root_path) %>
+  <%= link_to(image_tag("home-slide-3.png", :alt => "Wander Slide 3"), root_path) %>
+</div>
+
+<br>
+
 <div class="row">
-  <div class="large-12 columns">  
 
-    <div class="row">
-      <div class="large-12 hide-for-small">
+  <% if current_user %>
 
-        <div id="featured" data-orbit>
-          <%= link_to(image_tag("home-slide-1.png", :alt => "Wander Slide 1", :title => "Slide 1"), root_path) %>
-          <%= link_to(image_tag("home-slide-2.png", :alt => "Wander Slide 2", :title => "Slide 2"), root_path) %>
-          <%= link_to(image_tag("home-slide-3.png", :alt => "Wander Slide 3", :title => "Slide 3"), root_path) %>
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "My Profile", current_user %></h5>
+  </div>
 
+  <div class="large-3 medium-3 small-12 columns" id="home-row">
+    <h5 class="home-row"><%= link_to "Edit Profile", edit_user_registration_path %></h5>
+  </div>
 
-        </div>
+  <!-- <div class="hide-for-small"> -->
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "All Products", products_path %></h5>
+  </div>
 
-      </div>
-    </div>
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "Add Product", new_product_path %></h5>
+  </div>
 
+  <% else %>
 
-    <div class="row">
-      <div class="large-12 columns show-for-small">
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "Sign Up", new_user_registration_path %></h5>
+  </div>
 
-        <div id="featured" data-orbit>
-          <%= link_to(image_tag("home-slide-1-mob.png", :alt => "Wander Slide 1", :title => "Slide 1"), root_path) %>
-          <%= link_to(image_tag("home-slide-2-mob.png", :alt => "Wander Slide 2", :title => "Slide 2"), root_path) %>
-          <%= link_to(image_tag("home-slide-3-mob.png", :alt => "Wander Slide 3", :title => "Slide 3"), root_path) %>
-        </div>
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "Log In", new_user_session_path %></h5>
+  </div>
 
-      </div>
-    </div>
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "About", about_path %></h5>
+  </div>
 
-    <br>
+  <div class="large-3 medium-3 small-12 columns">
+    <h5 class="home-row"><%= link_to "Contact", contact_path %></h5>
+  </div>
 
-    <div class="row">
-
-            <% if current_user %>
-
-              <div class="large-3 medium-3 small-12 columns">
-                <h5 class="home-row"><%= link_to "My Profile", current_user %></h5>
-              </div>
-
-              <div class="large-3 medium-3 small-12 columns" id="home-row">
-                <h5 class="home-row"><%= link_to "Edit Profile", edit_user_registration_path %></h5>
-              </div>
-
-            <!-- <div class="hide-for-small"> -->
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "All Products", products_path %></h5>
-                </div>
-
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "Add Product", new_product_path %></h5>
-              </div>
-
-              <% else %>
-
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "Sign Up", new_user_registration_path %></h5>
-                </div>
-
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "Log In", new_user_session_path %></h5>
-                </div>
-
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "About", about_path %></h5>
-                </div>
-
-                <div class="large-3 medium-3 small-12 columns">
-                  <h5 class="home-row"><%= link_to "Contact", contact_path %></h5>
-              </div>
-
-              <% end %>
-            </div>
-          </div>
+  <% end %>
+</div>
+</div>
 
 
-        </div>
+</div>
 
-    <br>
+<br>
 
 
 <script>

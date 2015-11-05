@@ -28,3 +28,7 @@
  body {
    height: auto;
  }
+
+ main {
+  margin: 20px;
+ }

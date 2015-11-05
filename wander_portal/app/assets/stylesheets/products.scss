@@ -11,5 +11,33 @@
 
 
 .all-prod-title {
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.all-prod-seller {
+  font-size: 12px;
+}
+
+#add-prod-button {
+  border-radius: 0px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#panel {
+  a {
+    color: white;
+    font-size: 11px;
+  }
+}
+
+#placeholder_text {
+  font-size: 12px;
+}
+
+.form-layout {
+  margin: 20px;
+    button {
+      font-size: 30px;
+    }
 }

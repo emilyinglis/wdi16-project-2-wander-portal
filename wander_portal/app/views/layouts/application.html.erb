@@ -24,7 +24,7 @@
       <li class="name">
         <h1>
           <a href="#">
-          <%= link_to(image_tag("wander-nav-logo.png", width:"30px", height:"auto", :alt => "Wander Logo"), root_path) %>
+            <%= link_to(image_tag("wander-nav-logo.png", width:"30px", height:"auto", :alt => "Wander Logo"), root_path) %>
           </a>
         </h1>
       </li>
@@ -94,15 +94,17 @@
 
 <!-- end of foundation header -->
 
+<main>
 
+  <% flash.each do |name, message| %>
+  <div class="flash-message flash-message-<%= name %>">
+    <%= message %>
+  </div>
+  <% end %>
 
-<% flash.each do |name, message| %>
-<div class="flash-message flash-message-<%= name %>">
-  <%= message %>
-</div>
-<% end %>
+  <%= yield %>
 
-<%= yield %>
+</main>
 
 </body>
 
@@ -110,7 +112,7 @@
 
 <footer>
   &copy; Wander 2015
-    </footer>
+</footer>
 
-    
+
 </html>

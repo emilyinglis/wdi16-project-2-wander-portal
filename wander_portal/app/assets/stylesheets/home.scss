@@ -3,12 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.home-row {
+.home-row { 
   border: 1px solid black;
   margin: 5px;
   padding: 0px;
   text-align: center;
   padding: 5px;
   line-height: 50px;
+}
+
+.home-orbit-img {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.link {
+  font-size: 40px;
 }
 
