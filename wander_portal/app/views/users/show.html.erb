@@ -1,10 +1,21 @@
 <h1>My Profile</h1>
 
-<%= image_tag @user.logo, :width => "10%"  %>
 
-<%= @user.email  %>
+<ul>
+<li><h5>NAME</h5>
+<%= @user.name  %></li>
+<br>
+<li><h5>DESCRIPTION</h5>
+<%= @user.description  %></li>
+<br>
+<li><h5>EMAIL</h5>
+<%= @user.email  %></li>
+</ul>
 
 
-<%= link_to 'Edit', edit_user_registration_path(@user) %> |
+
+
+<%= link_to 'Edit', edit_user_registration_path(@user) %>
+
 <%= link_to 'Back', users_path %>
 
