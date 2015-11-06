@@ -32,6 +32,8 @@
     </ul>
     <section class="top-bar-section">
       <ul class="right">
+
+
         <% if current_user %>
         <li class="divider"></li> 
         <li><%= link_to "My Profile", current_user %></li>
@@ -50,7 +52,9 @@
         <ul class="dropdown">
           <li><%= link_to "Users", users_path %></li>                             
           <li><%= link_to "Categories", categories_path %></li>                   
-          <li><%= link_to "Sizes", sizes_path %></li>          
+          <li><%= link_to "Sizes", sizes_path %></li>  
+          <li><%= link_to "All Products", products_path %></li>
+
         </ul>
       </li>
       <li class="divider"></li>
@@ -91,7 +95,7 @@
 
 <!-- end of foundation header -->
 
-<main>
+
 
   <% flash.each do |name, message| %>
   <div class="flash-message flash-message-<%= name %>">
@@ -101,7 +105,7 @@
 
   <%= yield %>
 
-</main>
+
 
 </body>
 
