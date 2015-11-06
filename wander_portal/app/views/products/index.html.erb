@@ -21,11 +21,12 @@
  </div>
 
 
- <!-- right hand all products grid -->
+ <!-- styling to all products for desktop -->
 
-<!-- splitting styling for mobile / desktop -->
+<div class="large-9 columns hide-for-small" id="all-prod-grid">
 
-<div class="large-9 columns hide-for-small">
+
+<!-- user2 = products.where(user_id: "2") -->
 
   <% @products.each do |product| %>
   <div class="product-card">
@@ -45,10 +46,7 @@
 
 </div>
 
-
-
-
-
+<!-- styling to all products for mobile --> 
 
 <div class="row">
   <div class="large-12 columns show-for-small">
@@ -71,9 +69,6 @@
 
   </div>
 </div><br>
-<!-- orbit ends -->
-
-
 
 </div>
 
