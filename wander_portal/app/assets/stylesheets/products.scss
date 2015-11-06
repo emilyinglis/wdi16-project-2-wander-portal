@@ -47,8 +47,15 @@
     height: auto;
 }
 
+.product-card {
+  width: 33%;
+  height: auto;
+  float: left;
+  margin: 10px;
+}
+
 #panel {
-  width: 250px;
+  width: 100%;
   height: auto;
 }
 

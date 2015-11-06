@@ -1,18 +1,15 @@
-
-
-
 <div class="row" id="row">
+
+
+
+
+  <!-- left hand all prod description and add new prod button -->
 
   <div class="large-3 small-12 columns">
 
-<!--   <div class="hide-for-small panel">
-
-    </div> -->
-
-   
-      <h3>All Products</h3>
-      <h5 class="subheader" id="all-products-summary">View all your products then manage them instantly with the Wander Portal.
-      </h5>
+    <h3>All Products</h3>
+    <h5 class="subheader" id="all-products-summary">View all your products then manage them instantly with the Wander Portal.
+    </h5>
     
 
     <a href="#">
@@ -24,23 +21,59 @@
  </div>
 
 
- <div class="large-9 columns">
+ <!-- right hand all products grid -->
+
+<!-- splitting styling for mobile / desktop -->
+
+<div class="large-9 columns hide-for-small">
+
   <% @products.each do |product| %>
-  
-      <%= image_tag(product.image, width:"250px", height:"auto") %>
+  <div class="product-card">
+   <%= image_tag(product.image) %>
 
-      <div class="panel" id="panel">
-        <h5 class="all-prod-title" ><%= product.title %></h5>
-        <h6 class="all-prod-seller" >Brand: <%= product.user.try(:name) %></h6>
-        <td><%= link_to 'Show |', product %></td>
-        <td><%= link_to 'Edit |', edit_product_path(product) %></td>
-        <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </div>
+   <div class="panel" id="panel">
+     <h5 class="all-prod-title" ><%= product.title %></h5>
+     <h6 class="all-prod-seller" >Brand: <%= product.user.try(:name) %></h6>
+     <td><%= link_to 'Show |', product %></td>
+     <td><%= link_to 'Edit |', edit_product_path(product) %></td>
+     <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   </div>
 
-      <% end %>
+ </div>
+
+ <% end %>
+
+</div>
 
 
+
+
+
+
+<div class="row">
+  <div class="large-12 columns show-for-small">
+
+    <% @products.each do |product| %>
+    <!--     <div class="product-card"> -->
+    <%= image_tag(product.image) %>
+
+    <div class="panel" id="panel">
+      <h5 class="all-prod-title" ><%= product.title %></h5>
+      <h6 class="all-prod-seller" >Brand: <%= product.user.try(:name) %></h6>
+      <td><%= link_to 'Show |', product %></td>
+      <td><%= link_to 'Edit |', edit_product_path(product) %></td>
+      <td><%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </div>
+
+    <!--     </div> -->
+
+    <% end %>
+
+  </div>
+</div><br>
+<!-- orbit ends -->
+
+
 
 </div>
 
