@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-=======
 
-
-![](./readme-assets/mobilevisuals/mobile-phone2.gif)
-
-
->>>>>>> 3936e57b1071f7dd12b12069a1f5223487f16443
 # THE WANDER PORTAL
 
 ![](./readme-assets/all-screens.png)
