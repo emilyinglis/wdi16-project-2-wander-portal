@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+
+
+![](./readme-assets/mobilevisuals/mobile-phone2.gif)
+
+
+>>>>>>> 3936e57b1071f7dd12b12069a1f5223487f16443
 # THE WANDER PORTAL
 
 ![](./readme-assets/all-screens.png)
@@ -115,6 +123,7 @@ In total - and outside of planning - this app was created in 8-9 hours in total.
 4. Repolace unsightly flash messages with design-friendly corner notifications
 5. Clean up design accents such as buttons on forms
 6. Personalise Heroku URL without it buggering the hero images (weird) 
+<<<<<<< HEAD
 
 
 
@@ -125,3 +134,5 @@ In total - and outside of planning - this app was created in 8-9 hours in total.
 <!--
 ![](./readme-assets/all-screens.png)
 -->
+=======
+>>>>>>> 3936e57b1071f7dd12b12069a1f5223487f16443
