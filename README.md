@@ -1,5 +1,7 @@
 
 
+![](./readme-assets/mobilevisuals/mobile-phone1.gif)
+
 ![](./readme-assets/mobile-phone.gif)
 
 
