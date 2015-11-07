@@ -93,7 +93,6 @@ A significant win was the basis of my HTML and CSS. I spent a significant amount
 
 ### Process
 
-![](./images/prework-readme.png)
 
 1. I started by outlining the problem (a real-life problem no les) and learnings from user research, such as that our Sellers are often 'on the go' and require a mobile-first application. 
 2. . I then started planning my Associations, first writing them out and then creating a visual representation. You can find these within the **Associations** folder
@@ -118,12 +117,3 @@ In total - and outside of planning - this app was created in 8-9 hours in total.
 
 
 
-
-
-
-
-<!--
-![](./readme-assets/all-screens.png)
--->
-=======
->>>>>>> 3936e57b1071f7dd12b12069a1f5223487f16443
