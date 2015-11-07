@@ -36,13 +36,13 @@ The portal focusses first and foremost on the mobile experience for the user, ke
 
 To experience the portal as a new user ("Seller"):
 
-:1. Go to the [Wander Portal](http://bit.ly/wander-portal)
+1. Go to the [Wander Portal](http://bit.ly/wander-portal)
 
-:2. Click 'Sign Up' 
+2. Click 'Sign Up' 
 
-:3. Complete the form and click "Sign Up"
+3. Complete the form and click "Sign Up"
 
-:4. Get started by adding a new product to your collection - either via the homepage quick links, or the My Products dropdown menu.
+4. Get started by adding a new product to your collection - either via the homepage quick links, or the My Products dropdown menu.
 
 Once you've added a product, you can view it within All Products (My Producst < All Products). You can also easily update your information, such as your brand's name and description, as well as your email and password via My Profile, simply click Edit to do so.
 
@@ -51,11 +51,11 @@ Once you've added a product, you can view it within All Products (My Producst < 
 
 To experience the portal as an existing user ("Seller") with multiple products,  we have created a profile for you to view:
 
-:1. Go to the [Wander Portal](http://bit.ly/wander-portal)
+1. Go to the [Wander Portal](http://bit.ly/wander-portal)
 
-:2. Click 'Log In' 
+2. Click 'Log In' 
 
-:3. Log in as 'Uncivilised' with the following:
+3. Log in as 'Uncivilised' with the following:
 
 >> uncivilised@uncivilised.com
 
