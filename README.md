@@ -23,9 +23,7 @@ At peasent, all products are managed by Wander and not the sellers. With the aim
 
 ####The *Wander Portal*
 
-<p style:"float: left">
-  <img src:"./readme-assets/mobilevisuals/mobile-phone2.gif" />
-</p>
+  <img style="float: left" src="./readme-assets/mobilevisuals/mobile-phone2.gif" />
 
 The [Wander Portal](http://bit.ly/wander-portal) to vist the Wander Portal. is the answer to the problem; enabling Sellers to not only sign up and log in, but also upload, edit, delete and view their products - and only their products (i.e. they cannot view or manage other user's products or information).
 
